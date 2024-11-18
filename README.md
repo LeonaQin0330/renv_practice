@@ -177,7 +177,7 @@ Finally, *User B* should rename their compiled report so that it can be submitte
 *User A* will now `fetch` the code submitted by *User B*, synchronize their project library, test out the code, and eventually merge it into their `main` branch, thereby closing the pull request.
 
 1. *User A* should add *User B*'s repository as a remote.
-	- `git remote add <user_b_remote_name> https://github.com/<user_b_name>/<user_b_repo>`
+	- `git remote add <user_b_remote_name> https://github.com/LeonaQin0330/renv_practice`
 		- in this case, it's OK to use the `https://` syntax, because *User A* does not need to push to *User B*'s repository.
 		- "ssh"-style syntax would also be fine
 	- replace `<user_b_remote_name>` with whatever you would like to call this remote
