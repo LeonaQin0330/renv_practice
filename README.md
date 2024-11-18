@@ -81,13 +81,13 @@ Once the files are in the desired location, confirm that *User A* can build the 
 1. Log in to GitHub and create an empty GitHub repository.
 	- be sure to select the option not to add a README nor a license.
 	- choose any name for the repository you like
-2. *User A* uses `git remote add origin git@github.com:<user_a_github_name>/<user_a_repo_name>` to add *User A*'s GitHub repository as a remote of *User A*'s local repository named `origin`.
+2. *User A* uses `git remote add origin git@github.com:inkestonine/renv_practice.git` to add *User A*'s GitHub repository as a remote of *User A*'s local repository named `origin`.
 	
 	- replace `<user_a_github_name>` and `<user_a_repo_name>` with *User A*'s GitHub user name and GitHub repository name, repsectively
 	- be sure to use the "ssh" style syntax for adding a remote and not "https". I.e., your command should be `git remote add origin git@github.com:...` and __not__ `git remote add origin https://github.com/...`.
 	- You can confirm what web address was used to add the remote by executing `git remote -v`. - If the output of `git remote -v` shows that `origin` points to `https://github.com/<user_a_github_name>/<user_a_repo_name>`, then *User A* should remove the origin `remote` using `git remote remove origin` try Step 2 again.
 
-3. Use `git push origin <your_branch_name>` to push *User A*'s local repository to GitHub.
+3. Use `git push origin main` to push *User A*'s local repository to GitHub.
 	- `<your_branch_name>` is probably `main`, but it may be `master` for some of you
 4. Refresh the web page for *User A*'s GitHub repository's to confirm that the push was successful.
 
